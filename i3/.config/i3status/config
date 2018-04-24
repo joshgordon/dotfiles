@@ -1,0 +1,69 @@
+general {
+        interval = 1
+        output_format = i3bar
+}
+
+order += "ipv6"
+order += "disk /"
+order += "disk /home"
+order += "run_watch DHCP"
+order += "wireless wlp58s0"
+order += "battery 0"
+order += "battery 1"
+order += "cpu_temperature 0"
+order += "load"
+order += "tztime local"
+
+wireless wlp58s0 {
+        format_up = "W: (%quality at %essid, %bitrate) %ip"
+        format_down = "W: down"
+}
+
+
+battery 0 {
+        format = "%status %percentage %remaining %emptytime"
+        format_down = "No battery"
+        status_chr = "C"
+        status_bat = "B"
+        status_full = "☻"
+        status_unk = "?"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10
+}
+
+battery 1 {
+        format = "%status %percentage %remaining %emptytime"
+        format_down = "No battery"
+        status_chr = "C"
+        status_bat = "B"
+        status_full = "☻"
+	      status_unk = "?"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10
+}
+
+run_watch DHCP {
+        pidfile = "/var/run/dhclient*.pid"
+}
+
+
+tztime local {
+        format = "%Y-%m-%d %H:%M:%S"
+}
+
+load {
+        format = "%5min"
+}
+
+cpu_temperature 0 {
+        format = "T: %degrees °C"
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input"
+}
+
+disk "/" {
+        format = "%free"
+}
+
+disk "/home" {
+        format = "%free"
+}

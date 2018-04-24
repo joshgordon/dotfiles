@@ -1,0 +1,7 @@
+[user]
+	name = Josh Gordon
+	email = github@joshgordon.net
+[alias]
+	ci = commit
+[core]
+	excludesfile = "~/.gitignore_global"
