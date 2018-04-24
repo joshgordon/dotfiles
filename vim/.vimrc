@@ -4,3 +4,5 @@ syntax on
 filetype plugin indent on
 
 set nu
+
+nnoremap <C-q> gwip
