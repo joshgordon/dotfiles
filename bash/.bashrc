@@ -21,3 +21,6 @@ fi
 # disable C-s / C-q so I can use them elsewhere.
 stty -ixon
 
+if [ -f /usr/bin/foobar ]; then
+  alias vim=nvim
+fi
