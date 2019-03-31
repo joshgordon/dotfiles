@@ -5,3 +5,7 @@
 	ci = commit
 [core]
 	excludesfile = "~/.gitignore_global"
+	attributesfile = /home/josh/.gitattributes_global
+
+[diff "docxconv"]
+  textconv=unoconv -f text --stdout 

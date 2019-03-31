@@ -169,7 +169,7 @@ exec --no-startup-id setxkbmap -option "caps:super"
 exec --no-startup-id compton --config ~/.config/compton.conf
 
 # run redshift
-exec --no-startup-id redshift
+exec --no-startup-id redshift -l 39:-76
 
 # do brightness and keyboard brightness.
 bindsym XF86MonBrightnessDown exec --no-startup-id brightness down
@@ -193,7 +193,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id pasystray
 
 #Desktop background
-exec --no-startup-id feh --bg-scale ~/Pictures/apu.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/background.jpg
 
 # start gnome-keyring so we can have nice things.
 exec --no-startup-id gnome-keyring-daemon -s -c ssh
@@ -202,3 +202,7 @@ exec --no-startup-id gnome-keyring-daemon -s -c ssh
 # some magic to get ssh keys to work
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 exec --no-startup-id /bin/gnome-keyring-daemon
+
+# notifications!
+
+exec --no-startup-id dunst

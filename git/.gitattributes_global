@@ -1,0 +1,3 @@
+*.doc diff=docxconv
+*.docx diff=docxconv
+*.odt diff=docxconv
