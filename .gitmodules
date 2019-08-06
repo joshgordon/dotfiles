@@ -1,3 +1,18 @@
 [submodule "vim/.vim/bundle/indentLine"]
 	path = vim/.vim/bundle/indentLine
 	url = git@github.com:Yggdroot/indentLine.git
+[submodule "vim/.vim/bundle/vim-pathogen"]
+	path = vim/.vim/bundle/vim-pathogen
+	url = git@github.com:tpope/vim-pathogen.git
+[submodule "vim/.vim/bundle/vim-gitgutter"]
+	path = vim/.vim/bundle/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "vim/.vim/bundle/vim-flake8"]
+	path = vim/.vim/bundle/vim-flake8
+	url = git@github.com:nvie/vim-flake8.git
+[submodule "vim/.vim/bundle/vim-polyglot"]
+	path = vim/.vim/bundle/vim-polyglot
+	url = git@github.com:sheerun/vim-polyglot.git
+[submodule "vim/.vim/bundle/vim-prettier"]
+	path = vim/.vim/bundle/vim-prettier
+	url = git@github.com:prettier/vim-prettier.git
