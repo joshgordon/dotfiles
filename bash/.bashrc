@@ -9,6 +9,12 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
 
 alias pbcopy='xclip -selection c'
 alias pbpaste='xclip -selection clipboard -o'
