@@ -34,7 +34,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-AOC_API_KEY=53616c7465645f5fbaee1fcb25c0455f1bed9f3167547aa35afb36ff08995b1ea386960fdacdd69a817599c751e6ad87
 
 if [ -x /usr/bin/python3 ]; then
   alias python='python3'
