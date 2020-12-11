@@ -13,7 +13,7 @@ au BufNewFile,BufRead *.jsx set filetype=javascript
 au BufNewFile,BufRead *.less set filetype=css
 au BufNewFile,BufRead *.md set filetype=markdown
 
-autocmd FileType * setlocal formatoptions-=r
+set formatoptions=crqnlj
 
 set backupcopy=yes
 
