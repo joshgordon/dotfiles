@@ -32,11 +32,13 @@ function SetCopyMode()
     set nu!
     IndentLinesDisable
     GitGutterDisable
+    set colorcolumn=
     let g:copymode=1
   else
     set nu
     IndentLinesEnable
     GitGutterEnable
+    set colorcolumn=110
     let g:copymode=0
   endif
 endfunction
@@ -62,7 +64,7 @@ let g:prettier#config#semi = 'false'
 let g:prettier#config#single_quote = 'false'
 
 nnoremap <C-q> gwip
-set bg=dark
+" set bg=dark
 
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
@@ -72,3 +74,4 @@ inoremap <A-j> :m '>.+1<CR>gv=gv
 inoremap <A-k> :m '<.-2<CR>gv=gv
 
 tnoremap <Esc> <C-\><C-n>
+set mouse=
