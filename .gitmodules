@@ -19,6 +19,6 @@
 [submodule "zsh/.zsh/oh-my-zsh"]
 	path = zsh/.zsh/oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh.git
-[submodule "zsh/.zsh/custom/plugins"]
-	path = zsh/.zsh/custom/plugins
+[submodule "zsh/.zsh/custom/zsh-fzf-history-search"]
+	path = zsh/.zsh/custom/zsh-fzf-history-search
 	url = https://github.com/joshskidmore/zsh-fzf-history-search.git
