@@ -13,3 +13,7 @@
 [http "https://gitea.joshgordon.app"]
   sslCert = /home/josh/certs/client.cert
   sslKey = /home/josh/certs/client.key
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
