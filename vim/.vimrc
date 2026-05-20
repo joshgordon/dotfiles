@@ -49,10 +49,8 @@ map <C-c> :call SetCopyMode()<cr>
 set undofile
 set undodir=~/.vim/undodir
 
-source ~/.vim/black.vim
-
-autocmd FileType python map <F8> :Black<cr>
-autocmd BufWritePre *.py silent! execute ':Black'
+" autocmd FileType python map <F8> :Black<cr>
+" autocmd BufWritePre *.py silent! execute ':Black'
 
 set textwidth=110
 set colorcolumn=110
@@ -75,3 +73,6 @@ inoremap <A-k> :m '<.-2<CR>gv=gv
 
 tnoremap <Esc> <C-\><C-n>
 set mouse=
+
+let g:ale_fixers = {'python': ['black']}
+let g:ale_fix_on_save = 1
